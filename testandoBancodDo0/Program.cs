@@ -43,10 +43,14 @@ namespace testandoBancodDo0
                 name: "Cadastro",
                 pattern: "{controller=Cadastro}/{action=Cadastrar}/{id?}");
 
+            app.MapControllerRoute(
+                name: "Cadastro",
+                pattern: "{controller=Cadastro}/{action=SolicitarReceita}/{id?}");
+
             //esse mapController é para chamar a ação de autenticar login no banco de dados (está funcionando sem precisas usar essa rota.)
-           /* app.MapControllerRoute(
-                name: "Autenticar",
-                pattern: "{controller=AutenticaLogin}/{action=Login}/{id?}");*/
+            /* app.MapControllerRoute(
+                 name: "Autenticar",
+                 pattern: "{controller=AutenticaLogin}/{action=Login}/{id?}");*/
 
             app.MapControllerRoute(
                 name: "default",

@@ -7,13 +7,15 @@ namespace testandoBancodDo0.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string? Id { get; set; }
+        public string ?Id { get; set; }
         [Required]
-        public string Name { get; set; } = null;
+        public string ?Name { get; set; }
         [Required]
         [EmailAddress]
-        public string Email { get; set; } = null;
+        public string ?Email { get; set; }
         [Required]
-        public string Senha { get; set; } = null;
+        public string ?Senha { get; set; } 
+
+        
     }
 }

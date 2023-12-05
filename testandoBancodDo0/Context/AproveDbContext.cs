@@ -11,7 +11,7 @@ namespace testandoBancodDo0.Context
         }
 
         public DbSet<UsuarioModel> usuarios { get; set; }
-        //public DbSet<Receita> receitas { get; set; } 
+        public DbSet<ReceitaModel> receitas { get; set; } 
 
     }
 }
